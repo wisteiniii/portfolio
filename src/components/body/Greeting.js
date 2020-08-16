@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Greeting.module.css";
 
 function Greeting() {
   let name = "William";
@@ -14,7 +15,11 @@ function Greeting() {
     timeOfDay = "night";
   }
 
-  return <h1>Good{`${timeOfDay}, ${name}`}!</h1>;
+  return <h1 className = {
+    styles.greeting
+  } > Good {
+    `${timeOfDay}, ${name}`
+  }! < /h1>;
 }
 
 export default Greeting;

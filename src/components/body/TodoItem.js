@@ -6,6 +6,7 @@ function TodoItem(props) {
       <input type="checkbox" checked={props.item.completed} />
       <span>
         <p>{props.item.text}</p>
+        <p>Lorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsumLorem  ipsum</p>
       </span>
     </div>
   );
