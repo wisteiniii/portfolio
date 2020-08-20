@@ -1,10 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 import Header from "./components/header/Header";
 import MainContent from "./components/body/MainContent";
 import Footer from "./components/footer/Footer";
 import "./App.css";
 
-function App() {
+class App extends Component {
+  render () {
   return (
     <div>
       <Header />
@@ -12,6 +13,7 @@ function App() {
       <Footer />
     </div>
   );
+  }
 }
 
 export default App;

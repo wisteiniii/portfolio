@@ -4,11 +4,12 @@
 }
 
 html {
-  background-color: #264653;
+  background-color: whitesmoke;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 body {
-  background-color: #264653;
+  background-color: whitesmoke;
 }
 
 main {

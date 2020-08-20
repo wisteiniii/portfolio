@@ -9,9 +9,11 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@material-ui/core": "latest",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "clsx": "latest",
     "react": "latest",
+    "react-cool-tabs": "^1.1.6",
     "react-dom": "latest",
     "react-scripts": "latest"
   },
