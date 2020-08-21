@@ -6,16 +6,19 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "svgr": "svgr -d src/Icons/ assets/"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
+    "babel-loader": "^8.1.0",
     "clsx": "latest",
     "react": "latest",
     "react-cool-tabs": "^1.1.6",
     "react-dom": "latest",
-    "react-scripts": "latest"
+    "react-scripts": "latest",
+    "webpack": "^4.44.1"
   },
   "browserslist": {
     "production": [
@@ -28,5 +31,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@svgr/cli": "^5.4.0",
+    "file-loader": "^6.0.0"
   }
 }
