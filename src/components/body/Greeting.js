@@ -1,12 +1,11 @@
 import React from "react";
-import styles from "./Greeting.module.css";
 import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
-import classes from "./Greeting.module.css";
-import { red } from "@material-ui/core/colors";
+
 
 function Greeting() {
-  let name = prompt("Welcome, what's your name?");
+let name = prompt("Welcome, what's your name?");
   const date = new Date();
   const hours = date.getHours();
   let timeOfDay;
@@ -27,24 +26,35 @@ function Greeting() {
       justifyContent: "center",
       alignItems: "center",
     },
+    greeting: {
+      fontSize: "3vw",
+      fontWeight: "500"
+    },
   }));
 
   const classes = useStyles();
 
   if (hours < 12) {
-    timeOfDay = "morning";
+    timeOfDay = "Good Morning";
   } else if (hours >= 12 && hours < 17) {
-    timeOfDay = " afternoon";
+    timeOfDay = "Good Afternoon";
   } else {
-    timeOfDay = "night";
+    timeOfDay = "Good Evening";
   }
 
   return (
-    <div className={classes.root}>
+    <Grid className={classes.root}
+      item xs={16} sm={24}
+      container 
+      spacing={3}
+      direction="column"
+      justifyContent="center"
+      alignItems="center"
+      >
       <Paper elevation={24} className={classes.content}>
-        <h1> Good {`${timeOfDay}, ${name}`}!</h1>
+        <p className={classes.greeting}>{`${timeOfDay}, ${name}`}!</p>
       </Paper>
-    </div>
+    </Grid>
   );
 }
 

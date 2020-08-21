@@ -2,11 +2,13 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import Html5svg from "./Icons/Html5svg.js";
-import Css3svg from "./Icons/Css3svg.js";
-import Jssvg from "./Icons/Jssvg.js";
-import Npmsvg from "./Icons/Npmsvg.js";
-import Reactsvg from "./Icons/Reactsvg.js";
+import Html5Svg from "./../../assets/images/Html5Svg.svg";
+import Css3Svg from "./../../assets/images/Css3Svg.svg";
+import JsSvg from "./../../assets/images/JsSvg.svg";
+import NpmSvg from "./../../assets/images/NpmSvg.svg";
+import ReactSvg from "./../../assets/images/ReactSvg.svg";
+import SkillBar from "react-skillbars";
+import "./Knowledge.module.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,32 +24,92 @@ const useStyles = makeStyles((theme) => ({
 export default function Knowledge() {
   const classes = useStyles();
 
+  const html5 = [
+    {type: "HTML5", level: 85},
+  ];
+  const css3 = [
+    {type: "CSS3", level: 80},
+  ];
+  const js = [
+    {type: "JavaScript", level: 60},
+  ];
+  const node = [
+    {type: "NodeJS", level: 70},
+  ];
+  const react = [
+    {type: "React", level: 40},
+  ];
+
+  const colors = {
+    "bar": "cyan",
+    "title": {
+      "text": "#fff",
+      "background": "#3f71b5"
+    }
+  }
+
+
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
-        <Grid item xs={12} sm={6}>
+      <Grid container 
+      spacing={3}
+      direction="column"
+      justify="center"
+      alignItems="center"
+      >
+        <Grid item xs={12} sm={6}
+        style={{
+          width: "400px",
+          height: "400px"
+        }}
+        >
           <Paper elevation={24} className={classes.paper}>
-            <Css3svg />
+          <img src={Html5Svg} alt="Logo" />
+          <SkillBar skills={html5} height={15} colors={colors}/>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6}
+        style={{
+          width: "400px",
+          height: "400px"
+        }}
+        >
           <Paper elevation={24} className={classes.paper}>
-            <Html5svg />
+          <img src={Css3Svg} alt="Logo" />
+          <SkillBar skills={css3} height={15} colors={colors}/>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6}
+        style={{
+          width: "400px",
+          height: "400px"
+        }}
+        >
           <Paper elevation={24} className={classes.paper}>
-            <Jssvg />
+          <img src={JsSvg} alt="Logo" />
+          <SkillBar skills={js} height={15} colors={colors}/>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6}
+        style={{
+          width: "400px",
+          height: "400px"
+        }}
+        >
           <Paper elevation={24} className={classes.paper}>
-            <Npmsvg />
+          <img src={NpmSvg} alt="Logo" />
+          <SkillBar skills={node} height={15} colors={colors}/>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6}
+        style={{
+          width: "400px",
+          height: "400px"
+        }}
+        >
           <Paper elevation={24} className={classes.paper}>
-            <Reactsvg />
+          <img src={ReactSvg} alt="Logo" />
+          <SkillBar skills={react} height={15} colors={colors}/>
           </Paper>
         </Grid>
       </Grid>

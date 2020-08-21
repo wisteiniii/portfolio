@@ -1,11 +1,17 @@
 .footer {
-  position: fixed;
+  margin-bottom: -50px;
+  margin-top: 100px;
   bottom: 0;
-  text-align: center;
   width: 100%;
-  background-color: #1d3557;
-  color: #5c85bb;
-  height: 100px;
+  background-color: #3f51b5;
+  color: white;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer h1 {
+  text-align: center;
 }
 
 .footerContent {
@@ -14,17 +20,17 @@
 }
 
 .copyright {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   text-align: center;
-  margin: 0 auto;
+  flex-direction: column;
+  align-self: flex-end;
+  font-size: 0.75rem;
+  padding-top: 1rem;
+  color: #5c85bb;
 }
 
 footer a:link {
   text-decoration: none;
-  color: #b7d6ff;
+  color: #5c85bb;
 }
 
 footer a:visited {
@@ -33,7 +39,7 @@ footer a:visited {
 
 footer a:hover {
   text-decoration: none;
-  color: rgb(77, 121, 201);
+  color: rgb(122, 159, 226);
 }
 
 footer a:active {
