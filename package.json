@@ -17,6 +17,7 @@
     "react": "latest",
     "react-cool-tabs": "^1.1.6",
     "react-dom": "latest",
+    "react-reveal": "^1.2.2",
     "react-scripts": "latest",
     "react-skillbars": "^1.6.1",
     "webpack": "^4.44.1"
