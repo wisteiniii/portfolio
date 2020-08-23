@@ -58,7 +58,9 @@ function LinkTab(props) {
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: "transparent",
+    zIndex: "99",
+    color: "white",
   },
   indicator: {
     backgroundColor: "cyan",
@@ -75,7 +77,12 @@ export default function NavTabs() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar
+        position="static"
+        classes={{
+          root: classes.root,
+        }}
+      >
         <Tabs
           classes={{
             indicator: classes.indicator,
