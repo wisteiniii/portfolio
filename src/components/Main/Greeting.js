@@ -34,7 +34,7 @@ function Greeting() {
   const classes = useStyles();
 
   if (hours < 12) {
-    timeOfDay = "Good Morning";
+    timeOfDay = "Goodmorning";
   } else if (hours >= 12 && hours < 17) {
     timeOfDay = "Good Afternoon";
   } else {
