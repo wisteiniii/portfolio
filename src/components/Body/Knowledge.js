@@ -9,6 +9,7 @@ import NpmSvg from "./../../assets/images/NpmSvg.svg";
 import ReactSvg from "./../../assets/images/ReactSvg.svg";
 import SkillBar from "react-skillbars";
 import "./Knowledge.module.css";
+import Bounce from "react-reveal/Bounce";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,7 +42,7 @@ export default function Knowledge() {
   ];
 
   const colors = {
-    "bar": "cyan",
+    "bar": "#3f51b5",
     "title": {
       "text": "#fff",
       "background": "#3f71b5"
@@ -63,54 +64,56 @@ export default function Knowledge() {
           height: "400px"
         }}
         >
+        <Bounce left>
           <Paper elevation={24} className={classes.paper}>
           <img src={Html5Svg} alt="Logo" />
           <SkillBar skills={html5} height={15} colors={colors}/>
           </Paper>
+          </Bounce>
         </Grid>
         <Grid item xs={12} sm={6}
         style={{
           width: "400px",
           height: "400px"
         }}
-        >
+        ><Bounce right>
           <Paper elevation={24} className={classes.paper}>
           <img src={Css3Svg} alt="Logo" />
           <SkillBar skills={css3} height={15} colors={colors}/>
-          </Paper>
+          </Paper></Bounce>
         </Grid>
         <Grid item xs={12} sm={6}
         style={{
           width: "400px",
           height: "400px"
         }}
-        >
+        ><Bounce left>
           <Paper elevation={24} className={classes.paper}>
           <img src={JsSvg} alt="Logo" />
           <SkillBar skills={js} height={15} colors={colors}/>
-          </Paper>
+          </Paper></Bounce>
         </Grid>
         <Grid item xs={12} sm={6}
         style={{
           width: "400px",
           height: "400px"
         }}
-        >
+        ><Bounce right>
           <Paper elevation={24} className={classes.paper}>
           <img src={NpmSvg} alt="Logo" />
           <SkillBar skills={node} height={15} colors={colors}/>
-          </Paper>
+          </Paper></Bounce>
         </Grid>
         <Grid item xs={12} sm={6}
         style={{
           width: "400px",
           height: "400px"
         }}
-        >
+        ><Bounce left>
           <Paper elevation={24} className={classes.paper}>
           <img src={ReactSvg} alt="Logo" />
           <SkillBar skills={react} height={15} colors={colors}/>
-          </Paper>
+          </Paper></Bounce>
         </Grid>
       </Grid>
     </div>

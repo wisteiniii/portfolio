@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 
 function Greeting() {
-let name = prompt("Welcome, what's your name?");
+let name = "William";//prompt("Welcome, what's your name?");
   const date = new Date();
   const hours = date.getHours();
   let timeOfDay;
