@@ -26,7 +26,7 @@ function Greeting() {
       alignItems: "center",
     },
     greeting: {
-      fontSize: "3vw",
+      fontSize: "3.1vw",
       fontWeight: "500",
     },
   }));
