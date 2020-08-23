@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5353bf60.chunk.css",
-    "main.js": "/portfolio/static/js/main.c53b0bac.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c53b0bac.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.805c66c8.chunk.css",
+    "main.js": "/portfolio/static/js/main.4dd53406.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.4dd53406.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.68f35cd3.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.68f35cd3.js.map",
-    "static/js/2.6e7f85d5.chunk.js": "/portfolio/static/js/2.6e7f85d5.chunk.js",
-    "static/js/2.6e7f85d5.chunk.js.map": "/portfolio/static/js/2.6e7f85d5.chunk.js.map",
+    "static/js/2.2bdf9a90.chunk.js": "/portfolio/static/js/2.2bdf9a90.chunk.js",
+    "static/js/2.2bdf9a90.chunk.js.map": "/portfolio/static/js/2.2bdf9a90.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.b3c21b783bb8031ccd6a2274a239b2c5.js": "/portfolio/precache-manifest.b3c21b783bb8031ccd6a2274a239b2c5.js",
+    "precache-manifest.cdf68006b31e1e5f0f59517293ddfcf5.js": "/portfolio/precache-manifest.cdf68006b31e1e5f0f59517293ddfcf5.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.5353bf60.chunk.css.map": "/portfolio/static/css/main.5353bf60.chunk.css.map",
-    "static/js/2.6e7f85d5.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6e7f85d5.chunk.js.LICENSE.txt",
+    "static/css/main.805c66c8.chunk.css.map": "/portfolio/static/css/main.805c66c8.chunk.css.map",
+    "static/js/2.2bdf9a90.chunk.js.LICENSE.txt": "/portfolio/static/js/2.2bdf9a90.chunk.js.LICENSE.txt",
     "static/media/Css3Svg.svg": "/portfolio/static/media/Css3Svg.608bd27d.svg",
     "static/media/Html5Svg.svg": "/portfolio/static/media/Html5Svg.87973e80.svg",
     "static/media/JsSvg.svg": "/portfolio/static/media/JsSvg.44f5f12a.svg",
     "static/media/NpmSvg.svg": "/portfolio/static/media/NpmSvg.ddc2f46a.svg",
-    "static/media/ReactSvg.svg": "/portfolio/static/media/ReactSvg.92203a24.svg"
+    "static/media/ReactSvg.svg": "/portfolio/static/media/ReactSvg.92203a24.svg",
+    "static/media/Hero.module.css": "/portfolio/static/media/hero.57d4bbdb.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.68f35cd3.js",
-    "static/js/2.6e7f85d5.chunk.js",
-    "static/css/main.5353bf60.chunk.css",
-    "static/js/main.c53b0bac.chunk.js"
+    "static/js/2.2bdf9a90.chunk.js",
+    "static/css/main.805c66c8.chunk.css",
+    "static/js/main.4dd53406.chunk.js"
   ]
 }
