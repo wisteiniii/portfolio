@@ -15,6 +15,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  container: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(12, 1fr)',
+    gridGap: theme.spacing(3),
+  },
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
@@ -54,66 +59,52 @@ export default function Knowledge() {
     <div className={classes.root}>
       <Grid container 
       spacing={3}
-      direction="column"
       justify="center"
       alignItems="center"
       >
-        <Grid item xs={12} sm={6}
-        style={{
-          width: "400px",
-          height: "400px"
-        }}
-        >
-        <Bounce left>
-          <Paper elevation={24} className={classes.paper}>
-          <img src={Html5Svg} alt="Logo" />
-          <SkillBar skills={html5} height={15} colors={colors}/>
-          </Paper>
+        <Grid item lg={6} md={6} xs={10}>
+         <Bounce left>
+            <Paper elevation={24} className={classes.paper}>
+            <img src={Html5Svg} alt="Logo" />
+            <SkillBar skills={html5} height={15} colors={colors}/>
+            </Paper>
           </Bounce>
         </Grid>
-        <Grid item xs={12} sm={6}
-        style={{
-          width: "400px",
-          height: "400px"
-        }}
-        ><Bounce right>
-          <Paper elevation={24} className={classes.paper}>
-          <img src={Css3Svg} alt="Logo" />
-          <SkillBar skills={css3} height={15} colors={colors}/>
-          </Paper></Bounce>
+
+        <Grid item lg={6} md={6} xs={10}>
+         <Bounce right>
+            <Paper elevation={24} className={classes.paper} lg="auto">
+            <img src={Css3Svg} alt="Logo" />
+            <SkillBar skills={css3} height={15} colors={colors}/>
+            </Paper>
+          </Bounce>
         </Grid>
-        <Grid item xs={12} sm={6}
-        style={{
-          width: "400px",
-          height: "400px"
-        }}
-        ><Bounce left>
-          <Paper elevation={24} className={classes.paper}>
-          <img src={JsSvg} alt="Logo" />
-          <SkillBar skills={js} height={15} colors={colors}/>
-          </Paper></Bounce>
+
+        <Grid item lg={6} md={6} xs={10}>
+         <Bounce left>
+            <Paper elevation={24} className={classes.paper}>
+            <img src={JsSvg} alt="Logo" />
+            <SkillBar skills={js} height={15} colors={colors}/>
+            </Paper>
+          </Bounce>
         </Grid>
-        <Grid item xs={12} sm={6}
-        style={{
-          width: "400px",
-          height: "400px"
-        }}
-        ><Bounce right>
-          <Paper elevation={24} className={classes.paper}>
-          <img src={NpmSvg} alt="Logo" />
-          <SkillBar skills={node} height={15} colors={colors}/>
-          </Paper></Bounce>
+
+        <Grid item lg={6} md={6} xs={10}>
+          <Bounce right>
+            <Paper elevation={24} className={classes.paper}>
+            <img src={NpmSvg} alt="Logo" />
+            <SkillBar skills={node} height={15} colors={colors}/>
+            </Paper>
+          </Bounce>
         </Grid>
-        <Grid item xs={12} sm={6}
-        style={{
-          width: "400px",
-          height: "400px"
-        }}
-        ><Bounce left>
-          <Paper elevation={24} className={classes.paper}>
-          <img src={ReactSvg} alt="Logo" />
-          <SkillBar skills={react} height={15} colors={colors}/>
-          </Paper></Bounce>
+
+        <Grid item lg={6} md={6} xs={10}>
+         <Bounce left>
+            <Paper elevation={24} className={classes.paper}>
+            <img src={ReactSvg} alt="Logo" />
+            <SkillBar skills={react} height={15} colors={colors}/>
+            </Paper>
+          </Bounce>
         </Grid>
       </Grid>
     </div>

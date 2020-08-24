@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     backgroundColor: "transparent",
     zIndex: "99",
-    color: "white",
+    color: "black",
   },
   indicator: {
     backgroundColor: "cyan",

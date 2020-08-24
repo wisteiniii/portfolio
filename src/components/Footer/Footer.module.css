@@ -3,15 +3,17 @@
   margin-top: 100px;
   bottom: 0;
   width: 100%;
-  background-color: #3f51b5;
+  padding: 3rem;
+  background-color: #371d58;
   color: white;
-  height: 150px;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
 
 footer h1 {
   text-align: center;
+  font-size: 1rem;
 }
 
 .footerContent {
@@ -24,8 +26,9 @@ footer h1 {
   flex-direction: column;
   align-self: flex-end;
   font-size: 0.75rem;
-  padding-top: 1rem;
   color: #5c85bb;
+  white-space: nowrap;
+  overflow: visible;
 }
 
 footer a:link {
@@ -44,4 +47,28 @@ footer a:hover {
 
 footer a:active {
   text-decoration: underline;
+}
+
+.logosdiv {
+  text-align: center;
+  
+
+}
+
+.logosdiv ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logosdiv li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logosdiv li > img {
+  height: 30px;
+  width: 30px;
+  margin: 1rem 1rem;
 }
